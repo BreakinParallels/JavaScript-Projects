@@ -24,3 +24,6 @@ document.write(4 + 4);  //displaying an expression in browser
 
 var B = "rock" + "paper" + "scissors"       //assigning a concatenated string value to a variable
 document.write(B)                           //displaying variable B in browser
+
+var myPet = 'dog';
+document.write('My favorite animal is the ' + myPet + '.');   //assigning two concatenated string values to a variable
