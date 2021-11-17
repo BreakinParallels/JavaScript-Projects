@@ -6,7 +6,7 @@ function JavaScript_Practice() {
     document.getElementById("Orange_Text").innerHTML = result;
 }
 //assigns variable (sentence) and uses operator to concatenate a string
-function JavaScript_Practice() {
+function JavaScript2() {
     var sentence = "I am not learning";
     sentence += " a lot from this.";
     document.getElementById("Concatenate").innerHTML = sentence;
