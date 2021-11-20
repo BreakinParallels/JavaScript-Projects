@@ -13,28 +13,28 @@
   Add_numbers_2();
 
   //Local Variable Example:
-  function Add_numbers_1() {
+  function Add_numbers_3() {
       var X = 17;
     document.write(20 + X + "<br>");
 }
-function Add_numbers_2() {
+function Add_numbers_4() {
     document.write(X + 100);
 }
-Add_numbers_1();
-Add_numbers_2();
+Add_numbers_3();
+Add_numbers_4();
 
 
 
 //Using Console log method to detect errors:
-function Add_numbers_1() {
+function Add_numbers_5() {
     var X = 15;
     console.log(15 + X);
 }
-function Add_numbers_2() {
+function Add_numbers_6() {
     console.log(X + 100);
 }
-Add_numbers_1();
-Add_numbers_2();
+Add_numbers_5();
+Add_numbers_6();
 
 
 //IF Statement:
