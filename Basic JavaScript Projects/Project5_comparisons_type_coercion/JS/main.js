@@ -76,3 +76,9 @@ function not_Function() {
 function nd_Function() {
     document.getElementById("Not").innerHTML = !(50 > 105);     //Boolean Logical Operator(NOT) between values and variables
 }
+
+document.write(Bigger = (5 > 1) ? "Left number is bigger":"Right number is bigger");
+
+
+
+
