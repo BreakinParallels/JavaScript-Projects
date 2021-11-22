@@ -52,6 +52,6 @@ function Upper_case() {
 
 
 //Using valueOf() method
-    let text = "Bonjour";
+    let word = "Bonjour";
     let result = text.valueOf();
     document.getElementById("demoValue").innerHTML = result;
