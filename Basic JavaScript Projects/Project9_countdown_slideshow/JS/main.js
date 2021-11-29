@@ -2,7 +2,7 @@
 
 //Countdown Timer-------------------------------------
 function countdown() {
-    var seconds = document.getElementsById("seconds").value;
+    var seconds = document.getElementById("seconds").value;
 
     function tick() {
         seconds = seconds - 1;
@@ -22,7 +22,7 @@ function countdown() {
 
 //Slide 1 beginning
 var slideIndex = 1;
-showSlides(slidesIndex);
+showSlides(slideIndex);
 
 // Next/previous controls
 function plusSlides(n) {
@@ -46,7 +46,7 @@ function showSlides(n) {
     for (i = 0; i < dots.length; i++) {
         dots[i].className = dots[i].className.replace(" active", "");
     }
-    slides[slidesIndex-1].style.display = "block";
+    slides[slideIndex-1].style.display = "block";
     dots[slideIndex-1].className += " active";
 }
 
