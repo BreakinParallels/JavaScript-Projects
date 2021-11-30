@@ -52,6 +52,7 @@ function constant_function() {
 
 
 //Example of Let function-------------------
+function let_example() {
 var X = 82;
 document.write(X);
 {
@@ -59,3 +60,47 @@ document.write(X);
     document.write("<br>" + X);
 }
 document.write("<br>" + X);
+}
+
+
+//Return Statement------------------
+function myFunction() {
+    return Math.PI;
+}
+document.getElementById("demo2").innerHTML = myFunction();
+
+
+
+//Object Assignment and use of "let" keyword demo-----
+let car = {
+    make: "Audi ",
+    model: "R8 ",
+    year: "2021 ",
+    color: "Gun-Metal Gray ",
+    description : function() {
+        return "The car is a " + this.year + this.color  + this.make + this.model;
+    }
+};
+document.getElementById("Car_Object").innerHTML = car.description();
+
+
+
+//Utilizing Break function---------
+
+let digits = "";
+for (let i = 0; i < 10; i++) {
+    if (i === 3) { break; }
+    digits += "The number is " + i + "<br>";
+}
+document.getElementById("example_1").innerHTML = digits;
+
+
+
+
+
+
+
+
+
+
+
