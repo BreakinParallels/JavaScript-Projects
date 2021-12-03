@@ -198,6 +198,13 @@ function drawWinLine(coordX1, coordY1, coordX2, coordY2) {
             //if we've reach the end points.
             if (x >= x2 && y >= y2) { cancelAnimationFrame(animationLoop); }
         }
+        //This condition is similiar to the one above.
+        //This is necessary for the 6, 4, 2 win condition
+        if (x1 <= x2 && y1 >= y2) {
+            if (x < x2) { x += 10; }
+            if (y > y2) { y -= 10; }
+            if (x >= x2 && y <= y2) { cancelAnimationFrame(animationLoop); }
+        }
     }
 
     //This function clears our canvas after our win line is drawn.
@@ -212,7 +219,7 @@ function drawWinLine(coordX1, coordY1, coordX2, coordY2) {
     //This line disallows clicking while the win sound is playing
     disableClick();
     //This line plays the win sounds.
-    audio('./media/winGame.mp3');
+    audio('./media/ooooh.mp3');
     //This line calls our main animation loop.
     animateLineDrawing();
     //This line waits 1 second.  Then, clears canvas, resets game, and allows clicking again.
