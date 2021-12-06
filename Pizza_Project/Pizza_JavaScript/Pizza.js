@@ -4,7 +4,7 @@ function getReceipt() {
     //This initializes our string so it can get passed from
     // function to function, growing line by line into a full receipt
     var text1 = "<h3>You Ordered:</h3>";
-    var runningtotal = 0;
+    var runningTotal = 0;
     var sizeTotal = 0;
     var sizeArray = document.getElementsByClassName("size");
     for (var i = 0; i < sizeArray.length; i++) {
@@ -15,8 +15,7 @@ function getReceipt() {
     }
     if (selectedSize === "Kids Pizza") {
         sizeTotal = 4;
-    }
-    if (selectedSize === "Personal Pizza") {
+    } else if (selectedSize === "Personal Pizza") {
         sizeTotal = 6;
     } else if (selectedSize === "Small Pizza") {
         sizeTotal = 8;
