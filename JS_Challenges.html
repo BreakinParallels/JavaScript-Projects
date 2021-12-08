@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>JS Challenges</title>
+		<meta charset="UTF-8">
+    </head>
+
+    <body>
+        <style>
+            body {
+                opacity: 1;
+                transition: 1s opacity;
+            }
+
+            body.fade-out {
+                opacity: 0;
+                transition: none;
+            }
+        </style>
+         <script>
+            document.body.classList.add('fade-out');
+
+            window.addEventListener('DOMContentLoaded', () => {
+            document.body.classList.remove('fade-out');
+        });
+        </script>
+        <p id= "fade-out">Fading Fast</p>
+       
+
+       
+
+    </body>
+
+	
+		
+
+</html>

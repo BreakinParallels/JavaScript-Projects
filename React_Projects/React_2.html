@@ -7,6 +7,23 @@
         <script src="https://unpkg.com/react-dom@16/umd/react-dom.development.js" crossorigin></script>
     </head>
     <body>
+        <style>
+            body {
+                opacity: 1;
+                transition: 1s opacity;
+            }
+
+            body.fade-out {
+                opacity: 0;
+                transition: none;
+            }
+
+        </style>
+       
+
+        }
+        <h1 style="font-size:8vw;">Hello World</h1>
+        <p style="font-size:2vw;">Resize the browser window to see how the font size scales.</p>
         <div id="like_button_container"></div>
         <script>
             const X = React.createElement;
@@ -31,6 +48,8 @@
             }
             const domContainer = document.querySelector('#like_button_container');
             ReactDOM.render(X(likeButton), domContainer);
+
+            document.body.classList.add('fade-out');
         </script>
     </body>
 		
